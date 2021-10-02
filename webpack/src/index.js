@@ -4,8 +4,8 @@ import temp from './templates/test.hbs'
 const root = document.getElementById('root')
 
 const markup = temp({
-  firstname: "Yehuda",
-  lastname: "Katz",
+  firstname: "Yevgenii",
+  lastname: "Shevchenko",
 });
 
 root.innerHTML = markup;
