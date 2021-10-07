@@ -1,13 +1,10 @@
 import './styles.css';
 import temp from './templates/test.hbs'
+import { fakeAPI } from './testAPI';
+import { oneMovie } from './js/oneMovie';
 
 const root = document.getElementById('root')
 
-const markup = temp({
-  firstname: "Yehuda",
-  lastname: "Katz",
-});
-
-root.innerHTML = markup;
+root.innerHTML = oneMovie(fakeAPI);
 
 
